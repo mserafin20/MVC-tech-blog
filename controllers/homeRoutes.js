@@ -29,10 +29,10 @@ router.get("/", async (req, res) => {
 
 router.get('/post:id', async (req, res) => {
     try {
-        const postData = await Post.findByPk(req.session.user_id, {
+        const postData = await Post.findByPk(req.session.blogger_id, {
             include: [
                 {
-                    model: User,
+                    model: Blogger,
                     attributes: ['username'],
                 },
             ],
@@ -51,15 +51,15 @@ router.get('/post:id', async (req, res) => {
 router.get('/profile', withAuth, async (req, res) => {
     try {
       // Find the logged in user based on the session ID
-      const userData = await User.findByPk(req.session.user_id, {
+      const userData = await Blogger.findByPk(req.session.blogger_id, {
         attributes: { exclude: ['password'] },
         include: [{ model: Post }],
       });
   
-      const user = userData.get({ plain: true });
+      const blogger = bloggerData.get({ plain: true });
   
       res.render('profile', {
-        ...user,
+        ...blogger,
         logged_in: true
       });
     } catch (err) {
