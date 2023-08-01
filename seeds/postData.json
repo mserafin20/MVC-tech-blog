@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Vacation",
+        "message": "My family and I traveled to Florida durning the winter, the weather was so warm it made me forget all about how cold it was back home! We even saw Manatees swimming while eating at a restaurant on the water!",
+        "blogger_id": 2
+    },
+    {
+        "id": 2,
+        "title": "Fishing Trip",
+        "message": "Went deep sea fishing for the first time, I think it would have been better but the swells were 20ft high and I got sick :(",
+        "blogger_id": 1
+    },
+    {
+        "id": 3,
+        "title": "Second Vacation",
+        "message": "After visiting florida, we went on a six-island cruise around the carribean! That was the most fun I've ever had.",
+        "blogger_id": 2
+    },
+    {
+        "id": 4,
+        "title": "New Game",
+        "message": "Me and my friends recently developed a new game, but it's in early stages and super secret. If'd you'd like to know more let us know in the comments!",
+        "blogger_id": 1
+    }
+]

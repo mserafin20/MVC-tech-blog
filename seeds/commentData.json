@@ -1,11 +1,17 @@
 [
     {
-        "message": "This sounds great!"
+        "blogger_id": 1,
+        "message": "This sounds great!",
+        "post_id": 1
     },
     {
-        "message": "Not sure how I feel about that..."
+        "blogger_id": 2,
+        "message": "Not sure how I feel about that...",
+        "post_id": 2
     },
     {
-        "message": "I'd love to hear all about it!"
+        "blogger_id": 3,
+        "message": "I'd love to hear all about it!",
+        "post_id": 4
     }
 ]
