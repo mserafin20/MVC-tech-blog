@@ -11,19 +11,24 @@ Post.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        model: {
+        title: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        issue: {
+        message: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        user_id: {
+        date_created: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW,
+        },
+        blogger_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-                model: 'user',
+                model: 'blogger',
                 key: 'id',
             },
         },
