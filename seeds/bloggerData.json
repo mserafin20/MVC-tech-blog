@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "username": "philadelphiaColins",
+        "email": "philC@gmail.com",
+        "password": "cheeseburger896"
+    },
+    {
+        "id": 2,
+        "username": "macaroniRick",
+        "email": "rickyL@gmail.com",
+        "password": "freedom45"
+    },
+    {
+        "id": 3,
+        "username": "bubblesCats",
+        "email": "bubbles@gmail.com",
+        "password": "ilovemykittes20"
+    }
+]
