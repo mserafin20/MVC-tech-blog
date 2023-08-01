@@ -6,7 +6,7 @@ class Comment extends Model {}
 Comment.init(
     {
         id: {
-            type: DataTypes.INTERGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
@@ -21,14 +21,14 @@ Comment.init(
             defaultValue: DataTypes.NOW,
         },
         blogger_id: {
-            type: DataTypes.INTERGER,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'blogger',
                 key: 'id',
             },
         },
         post_id: {
-            type: DataTypes.INTERGER,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'post',
                 key: 'id',

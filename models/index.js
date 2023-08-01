@@ -1,6 +1,6 @@
-const Post = require('/Post');
-const Blogger = require('/Blogger');
-const Comment = require('/Comment');
+const Post = require('./post');
+const Blogger = require('./blogger');
+const Comment = require('./comment.js');
 
 Blogger.hasMany(Post, {
     foreignKey: 'blogger_id',
